@@ -7,7 +7,7 @@ public class ExercicioUm {
 
 	/**
 	 * @param args
-	 * @author Osvaldo Gusm‹o
+	 * @author Osvaldo Gusmao
 	 */
 	public static void main(String[] args) {
 		
