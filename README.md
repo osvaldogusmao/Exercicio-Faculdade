@@ -1,3 +1,3 @@
 # Trabalho da Faculdade.
 
-# Exercicio em Java
+# Exercícios em Java
