@@ -3,7 +3,7 @@ import java.util.Calendar;
 
 import javax.swing.JOptionPane;
 
-public class ExercicioUm {
+public class ExercicioDois {
 
 	/**
 	 * @param args
@@ -16,11 +16,16 @@ public class ExercicioUm {
 		
 		int anoAtual = Integer.parseInt(formatDate.format(calendar.getTime()));
 		
+		String nomeAluno = JOptionPane.showInputDialog("Insira seu nome");
 		int anoNascimento = Integer.parseInt(JOptionPane.showInputDialog("Digite o ano em que vc nasceu "));
 		
 		int idade = anoAtual - anoNascimento;
 		
-		JOptionPane.showMessageDialog(null, "Você tem ou irá fazer " + idade + " ano(s). " );
+		if (idade >= 18) {
+			JOptionPane.showMessageDialog(null, "Seja bem-vindo " + nomeAluno + ".\nVocê está apto a tirar sua CNH." );
+		}else {
+			JOptionPane.showMessageDialog(null, "Seja bem-vindo " + nomeAluno + ".\nVocê não está apto a tirar sua CNH." );
+		}
 		
 	}
 
